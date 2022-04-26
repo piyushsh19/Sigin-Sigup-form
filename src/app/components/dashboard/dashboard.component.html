@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg " style="background: #100204;" >
+    <div class="container-fluid">
+      <h1 class="navbar-brand " style="color: white;"   href="#">Angular DashBoard</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <h5 class="nav-link" routerLink="/counter" routerLinkActive="active" href="#">Counter App</h5>
+          </li>
+          
+          <li class="nav-item">
+            <h5 class="nav-link " routerLinkActive="active" routerLink="/dashboard">Random Card App</h5>
+          </li>
+        </ul>
+        <button routerLink="/signin" class="btn btn-primary">Logout</button>
+      </div>
+    </div>
+  </nav>
+  <div style="display: flex; justify-content: center; background-image: url(../../../assets/background.jpg ) ;" class="app p-4 container-fluid">
+    <div class="row">
+      <div class="col col-md-4 offset-md-4">
+        <div class="text-center">
+          <app-card [user]="user" *ngIf="user; else loadingBlock"></app-card>
+  
+          <ng-template #loadingBlock>
+            <div class="text-center mt-5">
+              <div
+                class="spinner-border spinner-grow-mg text-white"
+                role="status"
+              >
+                <div class="text-white">
+                  loading....
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

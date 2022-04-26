@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "fullname": "devtest",
+      "email": "dev@ae.live",
+      "password": "dev@123",
+      "id": 1
+    },
+    {
+      "fullname": "devtest2",
+      "email": "dev2@ae.live",
+      "password": "dev2@123",
+      "id": 2
+    },
+    {
+      "fullname": "devtest4",
+      "email": "devtest4@ae.live",
+      "password": "dev4@123",
+      "id": 3
+    },
+    {
+      "fullname": "testuser10",
+      "email": "testuser@ae.live",
+      "password": "testuser110",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
