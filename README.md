@@ -1,4 +1,14 @@
 # SigninSignup
+This project is Signup and Signin form which Store users in db.json file. The json server is running locally.
+
+## Features
+1. Login authentication only for registered users.
+2. The dashboard consist of 3 different projects.
+3. Routing is enabled to navigate to different components.
+4. First components demonstrate how we fetch data from API.
+5. Second component demonstrate the decorative and injective functionality.
+6. Third component demonstrate reactive form and directives used in angular with simple increment and decrement project.
+7. Logout feture is enabled at navbar.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
